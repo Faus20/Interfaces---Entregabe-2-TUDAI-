@@ -1,0 +1,113 @@
+
+
+body{
+    background:rgba(0,0,70,1);
+    background: linear-gradient(90deg, rgba(0,0,70,1) 0%, rgba(9,9,121,1) 10%, rgba(28,181,224,1) 100%);
+    width: 99%;;
+}
+
+img{
+    margin:auto;
+    display:block;
+    height: 120px;
+}
+
+h5{
+ color: white;   
+}
+
+.title{
+    border-top: solid rgb(235, 109, 134) 1px;
+    border-bottom: solid rgb(235, 109, 134) 1px;
+}
+
+
+/*** ESTILOS BOTÓN GROW ELLIPSE ***/
+.ov-btn-grow-ellipse {
+    background: linear-gradient(90deg,  rgb(22, 42, 48)  0%, rgb(91, 91, 133) 60%, rgb(143, 143, 150) 100%);
+    color: rgb(233, 233, 245); /* color de fuente */
+    padding: 4px 20px;
+    border-radius: 30px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+  }
+  .ov-btn-grow-ellipse:hover {
+    color: #fff;/* color de fuente hover */
+  }
+  .ov-btn-grow-ellipse::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    padding: 3px 10px;
+    display: block;
+    border-radius: 50%;
+    left: -50%;
+    right: -50%;
+    top: -150%;
+    bottom: -150%;
+    transform: scale(0, 0);
+    background: rgb(245, 109, 134); /* color de fondo hover */
+    transition: all 0.4s ease;
+  }
+
+  .guardar{
+    background:linear-gradient(90deg, rgb(26, 214, 67) 0%, rgb(6, 255, 1) 100%);
+    
+  }
+
+  .brocha, .no_filtro {
+    background: linear-gradient(90deg, rgba(0,0,70,1) 0%, rgba(9,9,121,1) 10%, rgba(28,181,224,1) 100%);
+  }
+    
+  .subir{
+    background:linear-gradient(90deg,rgb(231, 106, 4) 0%, rgb(255, 176, 6)  100%);
+  }
+  .reiniciar{
+    background: linear-gradient(90deg,rgb(214, 26, 1) 0%, rgb(255, 0, 0)  100%);
+  }
+  .brocha::after,  .reiniciar::after, .subir::after,.guardar::after, .no_filtro::after {
+    background: rgb(245, 109, 134); /* color de fondo hover */
+  }
+
+  .form-control-color:hover{
+    background: rgb(235, 109, 134);
+  }
+
+ 
+  
+  .ov-btn-grow-ellipse:hover::after {
+    transition: all 0.6s ease-out;
+    transform: scale(1, 1);
+  }
+
+  canvas{ 
+    border: 2px rgb(235, 109, 134) solid;
+  }
+
+  p{
+    padding: 0%;
+    margin: 0%;
+    color: white;
+    background: linear-gradient(90deg, rgba(0,0,70,1) 0%, rgba(9,9,121,1) 10%, rgba(28,181,224,1) 100%);
+    border-radius: 30px;
+  }
+
+  .container-brocha{
+    margin-top: 10px;
+  
+  }
+
+  input[type="file"] {
+    display: none;
+  }
+
+  button{
+    font-size: 15px;
+  }
+
+  .brillo{
+    color: #fff;
+    font-size: 15px;
+  }
